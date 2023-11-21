@@ -1,0 +1,455 @@
+@font-face {
+  font-family: 'Cabin';
+  src: url('./font/static/Cabin-Bold.ttf');
+}
+
+
+/* reset */
+
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Font */
+
+  h1,h2,h3{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  }
+
+  body{
+    font-family: 'Cabin';  
+  }
+
+  input{
+    font-family: 'Cabin';
+  }
+  
+    /* header */
+
+  .navbar {
+    background-color: #333;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .navbar ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+
+  /* banniere */
+    
+  .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+    width: 50%;
+    height: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .text a{
+
+    width: 200px;
+    text-decoration: none;
+    font-size: 1.8em;
+    color: #FFFFFF;
+    padding: 10px 10px;
+    margin: 0 auto;
+    border: solid 2px;
+    border-radius: 100px;
+    
+  }
+
+  .text a:hover{
+    transition: all ease-in 2ms;
+    color:  #f1c40f;
+  }
+
+  .text a:active{
+  transform: scale(0.95); 
+  box-shadow: 0 0 5px rgba(145, 117, 6, 0.5); 
+  }
+
+  .text h1{
+    font-size: 4.2em;
+    color: #FFFFFF;
+  }
+
+  .text p{
+    color: #FFFFFF;
+    font-size: 2.2em;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin: 0 10px;
+    font-size: 1.8em;
+  }
+
+    .ArrierePlan{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/image/world-461179_1920.jpg);
+    background-size: cover; 
+    background-position: center; 
+    filter: brightness(80%)  saturate(150%);
+  }
+
+    .content {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+  
+  /* section1 */
+
+  .conteneur{
+    width: 100%;
+    height: auto;
+    padding: 0 20%;
+    background-color: #f1c40f; 
+  }
+
+  .suite {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    padding: 10% 0;
+  }
+
+  .suite h2{
+    font-size: 3.2vw;
+    margin-bottom: 15px;
+  }
+
+  .suite h3{
+    font-size: 2vw;
+    margin-bottom: 15px;
+  }
+
+.maquette{
+    width: 55%;
+    height: auto;
+    margin: 0 40px;
+    font-size: 1.1em;
+}
+
+.image-conteneur{
+  box-shadow: 8px 7px 10px #DAF7A6;
+  border-radius: 40px 0 20px 0;
+}
+
+
+/* section 2 */
+
+.hex-container{
+
+  display:flex;
+  --s: 350px;  /* size  */
+  --m: 4px;    /* margin */
+  --f: calc(var(--s) * 1.732 + 4 * var(--m) - 1px);
+  padding: 5% 14%;
+  margin: 5% 0;
+  height: auto;
+}
+.hexhex{
+  font-size: 0;
+}
+
+.hex{
+  width: var(--s);
+  margin: var(--m);
+  height: calc(var(--s) * 1.1547);
+  display: inline-block;
+  font-size:initial;
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+  margin-bottom: calc(var(--m) - var(--s) * 0.2885);
+}
+
+.hexhex::before{
+
+  content: "";
+  width: calc(var(--s) / 2 + var(--m));
+  float: left;
+  height: 120%; 
+  shape-outside: repeating-linear-gradient(#0000 0 calc(var(--f) - 3px), #000 0 var(--f));
+
+}
+
+.hex:hover{
+  
+  transition: all 0.3s ease;
+  transform: scale(1.02);
+  shape-outside: none;
+ 
+}
+
+.hex:nth-child(1){
+  background-image: url(./image/fisherman-8243136_1280.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.hex:nth-child(2){
+  background-image: url(./image/mountains-8375693_1280.jpg);
+  background-position: center;
+  background-size: cover;
+  
+}
+.hex:nth-child(3){
+  background-image: url(./image/snow-8173264_1280.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.hex:nth-child(4){
+  background-image: url(./image/stones-8265502_1280.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.hex:nth-child(5){
+  background-image: url(./image/eautombante_1280.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.hex:nth-child(6){
+  background-image: url(./image/photographer-7902219_1280.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.hex:nth-child(7){
+  background-image: url(./image/island-7756423_1280.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.hex:nth-child(8){
+  background-image: url(./image/view-7670868_1280.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* Section */
+
+.tarif{
+  display: flex;
+  justify-content: center;
+  background-color: #DAF7A6;
+  padding: 50px 0;
+}
+
+table{
+  border-collapse: collapse;
+  font-size: 1.5em;
+}
+
+td,th{
+  border: 1px solid rgb(0, 0, 0);
+  padding: 15px;
+}
+
+caption{
+  margin-bottom: 20px;
+}
+
+
+
+/* Formulaire */
+
+.pag{
+  position: relative;
+  background: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.boxform {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 50px;
+  width: 50vw;
+  height: auto;
+  background: #333;
+  border-radius: 5px;
+}
+
+.boxform h1{
+  margin-top: 0;
+  font-size: 50px;
+  text-align: center;
+  color: #f1f1f1;
+}
+.boxform h1 span img{
+  width: 50px;
+  position: relative;
+  top: 10px;
+}
+
+.emailInp, select, textarea {
+  display: block;
+  margin: 20px auto;
+  outline: 0;
+  background: #f1f1f1;
+  width: 95%;
+  border: 0;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.labelEmail, .labelSelect, .labelTxt {
+  color: #f1f1f1;
+  display: block;
+  margin: 0 auto;
+  width: 95%;
+  position: relative;
+  top: 7px;
+}
+
+.flex2Inputs {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.destinationOptions {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 20px auto;
+  color: #FFFFFF;
+}
+
+.destinationOptions label {
+  display: flex;
+  align-items: center;
+  margin: 5px 15px; /* Espacement entre chaque bouton */
+  font-size: 16px; /* Taille du texte */
+}
+
+.flexInp {
+  margin: 20px auto;
+  outline: 0;
+  background: #f1f1f1;
+  width: 90%;
+  border: 0;
+  padding: 15px;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.flexLeftInp, .flexRightInp {
+  flex-basis: 45%;
+}
+
+.labelFlex {
+  color: #f1f1f1;
+  position: relative;
+
+}
+
+.formButton{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.formButton button{
+  width: 190px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 1.6em;
+  cursor: pointer;
+}
+
+.formButton button:hover{
+  background-color: #b1b1b1;
+  transition: all ease-in 0.1s;
+  box-shadow: 0 0 10px rgba(177, 177, 177, 0.5);
+}
+
+.formButton button:active{
+  background-color: #747474;
+  transition: all ease-in 0.1s;
+  box-shadow: 0 0 10px rgba(177, 177, 177, 0.5);
+  color: #f1f1f1;
+}
+
+/* pages Services */
+
+/* Services listes à puces */
+.services{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 10%;
+  padding: 5%;
+  background-color: #FFBF66;
+}
+
+.services-list {
+  margin-left: 20px;
+  font-size: 18px;
+  list-style-type: disc; 
+}
+
+
+
+.services h2 {
+  font-size: 24px;
+  color: #24678d; 
+  margin-bottom: 30px;
+}
+
+
+.services li {
+  padding: 5px 0;
+}
+
+.services li a:hover{
+  color: #24348d;
+  transition: ease-in-out 20ms;
+}
+
+.services li a{
+  text-decoration: none;
+  color: rgb(66, 68, 68);
+}
+
+/* Voyages en groupe */
+
+.voyageGroupe{
+  background-color: #EEE6D8;
+  margin: 0 10%;
+  padding: 3% 10%;
+}
+
+/* footer */
+
+footer{
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.851);
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.5em;
+  height: 10vh;
+  width: 100%;
+  padding-top: 20px;
+}

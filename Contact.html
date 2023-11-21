@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyage</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <ul >
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="./Services.html">Services</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+
+    <section class="pag">
+        <div class="boxform">
+    
+                <h1>Contactez-nous
+                    <span class="logoTitre">
+                        <img src="./image/logoPlane.svg" alt="logoplane">
+                    </span>
+                </h1>
+    
+                <form>
+                    <label for="email" class="labelEmail">Entrez votre Email</label>
+                    <input type="text" name="email" id="email" class="emailInp" required maxlength="50" placeholder="Entrez votre email">
+                
+    
+                <div class="flex2Inputs">
+    
+                    <div class="flexLeftInp">
+                        <label for="prenom" class="labelFlex">Entrez votre prénom</label>
+                        <input type="text" name="prenom" id="prenom" required maxlength="35" class="flexInp" 
+                        placeholder="Entrez votre prénom">
+                    </div>
+    
+                    <div class="flexRightInp">
+                        <label for="nom" class="labelFlex">Entrez votre nom</label>
+                        <input type="text" name="nom" id="nom" required maxlength="35" class="flexInp"
+                        placeholder="Entrez votre nom">
+                    </div>
+    
+                </div>
+
+                <label for="destination" class="labelSelect">Choisissez votre destination de rêve :</label>
+                <div class="destinationOptions">
+                    <label>
+                        <input type="radio" name="destination" value="plage" required>
+                        Plage
+                    </label>
+                    <label>
+                        <input type="radio" name="destination" value="montagne">
+                        Montagne
+                    </label>
+                    <label>
+                        <input type="radio" name="destination" value="ville">
+                        Ville
+                    </label>
+                    <label>
+                        <input type="radio" name="destination" value="campagne">
+                        Campagne
+                    </label>
+                </div>
+                
+                    <label for="inpSelect" class="labelSelect">Sélectionnez votre style de voyage préféré</label>
+                    <select name="select" id="inpSelect">
+                        <option value="">Choisissez...</option>
+                        <option value="aventure">Aventure</option>
+                        <option value="culture">Culture</option>
+                        <option value="famille">Voyage en famille</option>
+                        <option value="romantique">Voyage romantique</option>
+                        <option value="affaires">Voyage d'affaires</option>
+                        <option value="autre">Autre</option>
+                    </select>
+    
+                    <label for="txtArea" class="labelTxt">Partagez vos attentes ou demandes spéciales</label>
+                    <textarea id="txtArea" class="" name="txt" cols="30" rows="10"></textarea>
+                    <div class="formButton">
+                        <button>Envoyer</button>
+                    </div>
+                        
+                
+                </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Coypright © DULCA Constantin</p>
+    </footer>
+</body>
+</html>
